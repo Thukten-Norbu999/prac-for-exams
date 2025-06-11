@@ -8,36 +8,43 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      #results-panel {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 1050;
+        background: #fff;
+        padding: 15px 25px;
+        border: 2px solid #ccc;
+        border-radius: 8px 0 0 8px;
+        box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.15);
+        max-width: 320px;
+      }
+    </style>
   </head>
   <body class="bg-light">
     <div class="container py-5">
       <h1 class="text-center mb-4">Quiz Generator (MCQ & SAQ)</h1>
 
       <div class="mb-4">
-        
         <div class="container">
-          <p>Add this propmt in the AI(chatgpt,claude, deepseek...)</p>
-          <div class="code bg-dark ">
+          <p>Add this prompt in the AI(chatgpt, claude, deepseek...)</p>
+          <div class="code bg-dark">
             <code class="text-light p-4">
-            give me mcqs for the topics above in following json format {"mcqs":
-            [...], "saqs": [...]}
-          </code>
+              give me mcqs for the topics above in following json format {"mcqs": [...], "saqs": [...]}
+            </code>
           </div>
-          
         </div>
         <br />
-        <strong
-          >Make sure the questions are in the same format as in the
-          placeholder</strong
-        ><br />
+        <strong>Make sure the questions are in the same format as in the placeholder</strong><br />
         <label for="jsonInput" class="form-label">Paste Quiz JSON Here:</label>
         <textarea
           id="jsonInput"
           class="form-control"
           rows="10"
-          placeholder='{"mcqs": [...], "saqs": [...]}'
-        >
-        </textarea>
+          placeholder='{"mcqs": [...], "saqs": [...]}'></textarea>
         <button class="btn btn-success mt-2" id="generate-btn">
           Generate Quiz
         </button>
@@ -46,8 +53,11 @@
       <div class="card shadow p-4" id="quiz-container"></div>
       <div class="text-center mt-4">
         <button class="btn btn-primary" id="submit-btn">Submit</button>
-        <div class="mt-3 fw-bold" id="results"></div>
       </div>
+    </div>
+
+    <div id="results-panel">
+      <div class="fw-bold" id="results"></div>
     </div>
 
     <script>
@@ -96,7 +106,7 @@
               input.className = "form-check-input me-2";
 
               const wrapper = document.createElement("div");
-              wrapper.className = "form-check";
+              wrapper.className = "form-check option-wrapper";
 
               label.appendChild(input);
               label.appendChild(document.createTextNode(opt));
@@ -131,11 +141,33 @@
             }
 
             const textArea = document.createElement("textarea");
-            textArea.className = "form-control";
+            textArea.className = "form-control mb-2";
             textArea.rows = 4;
             textArea.placeholder = "Type your answer here...";
             textArea.name = `saq${index}`;
             qDiv.appendChild(textArea);
+
+            // Show sample answer (even if empty)
+            const answerBtn = document.createElement("button");
+            answerBtn.className = "btn btn-sm btn-outline-info mt-2";
+            answerBtn.innerText = "Show Sample Answer";
+            answerBtn.type = "button";
+
+            const answerDiv = document.createElement("div");
+            answerDiv.className = "alert alert-info mt-2 d-none";
+            answerDiv.innerHTML =
+              `<strong>Sample Answer:</strong> ${
+                q.answer && q.answer.trim()
+                  ? q.answer
+                  : "<em>No sample answer available.</em>"
+              }`;
+
+            answerBtn.addEventListener("click", () => {
+              answerDiv.classList.toggle("d-none");
+            });
+
+            qDiv.appendChild(answerBtn);
+            qDiv.appendChild(answerDiv);
 
             saqSection.appendChild(qDiv);
           });
@@ -168,6 +200,17 @@
           const selected = document.querySelector(
             `input[name=q${index}]:checked`
           );
+
+          const options = document.getElementsByName(`q${index}`);
+          options.forEach((opt) => {
+            const parent = opt.closest(".option-wrapper");
+            if (opt.value === q.answer) {
+              parent.classList.add("bg-success", "text-white", "p-2");
+            } else if (opt.checked) {
+              parent.classList.add("bg-danger", "text-white", "p-2");
+            }
+          });
+
           if (selected && selected.value === q.answer) {
             score++;
           }
@@ -175,6 +218,9 @@
         document.getElementById(
           "results"
         ).innerText = `You scored ${score} out of ${currentQuizData.mcqs.length} for MCQs.`;
+
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
   </body>

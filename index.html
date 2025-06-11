@@ -155,10 +155,11 @@
 
             const answerDiv = document.createElement("div");
             answerDiv.className = "alert alert-info mt-2 d-none";
+            
             answerDiv.innerHTML =
               `<strong>Sample Answer:</strong> ${
-                q.answer && q.answer.trim()
-                  ? q.answer
+                q.sample_answer && q.sample_answer.trim()
+                  ? q.sample_answer
                   : "<em>No sample answer available.</em>"
               }`;
 

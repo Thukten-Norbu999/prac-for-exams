@@ -1,31 +1,30 @@
-
 {
   "sets": [
     {
       "set_number": 1,
       "mcqs": [
         {
-          "question": "Which arteriole carries blood into the glomerulus?",
+          "question": "A patient has reduced ability to absorb vitamin B12 due to autoimmune destruction of gastric parietal cells. Which substance is most likely deficient?",
+          "options": ["Pepsinogen", "Intrinsic factor", "Hydrochloric acid", "Bile salts"],
+          "correct_answer": "Intrinsic factor",
+          "marks": 1
+        },
+        {
+          "question": "Which arteriole carries blood into the glomerulus for filtration?",
           "options": ["Efferent arteriole", "Afferent arteriole", "Renal vein", "Vasa recta"],
           "correct_answer": "Afferent arteriole",
           "marks": 1
         },
         {
-          "question": "Intrinsic factor produced by gastric parietal cells is essential for absorption of which vitamin?",
-          "options": ["Vitamin A", "Vitamin C", "Vitamin B12", "Vitamin D"],
-          "correct_answer": "Vitamin B12",
-          "marks": 1
-        },
-        {
-          "question": "Which of the following is a monosaccharide?",
-          "options": ["Glucose", "Sucrose", "Lactose", "Starch"],
+          "question": "Which carbohydrate is absorbed directly into the bloodstream without further digestion?",
+          "options": ["Sucrose", "Glucose", "Lactose", "Maltose"],
           "correct_answer": "Glucose",
           "marks": 1
         }
       ],
       "fill_in_the_blanks": [
         {
-          "question": "The hormone produced by the kidney that stimulates red blood cell production is ________.",
+          "question": "The hormone secreted by the kidney that stimulates red blood cell production in the bone marrow is ________.",
           "correct_answer": "Erythropoietin",
           "marks": 1
         },
@@ -37,13 +36,13 @@
       ],
       "saqs": [
         {
-          "question": "Describe the role of the loop of Henle in concentrating urine.",
-          "sample_answer": "The loop of Henle establishes a medullary osmotic gradient via countercurrent flow: the descending limb is permeable to water (allowing water to leave into the hyperosmotic medulla) while the ascending limb actively transports NaCl out but is impermeable to water. This creates and maintains the concentration gradient that permits water reabsorption from the collecting duct under ADH, concentrating the urine.",
+          "question": "Explain the countercurrent mechanism of the loop of Henle and its significance in producing concentrated urine.",
+          "sample_answer": "The loop of Henle creates a medullary osmotic gradient: the descending limb is permeable to water but not solutes, allowing water to leave; the ascending limb actively pumps NaCl into the interstitium but is impermeable to water. This gradient allows the collecting duct to reabsorb water under ADH influence, producing concentrated urine.",
           "marks": 5
         },
         {
-          "question": "Explain emulsification of fats and why it is necessary for lipid digestion.",
-          "sample_answer": "Emulsification is the mechanical breakdown of large fat droplets into many small droplets by bile salts (amphipathic molecules). This increases surface area for pancreatic lipase to act, enabling efficient hydrolysis of triglycerides into monoglycerides and fatty acids, which then form micelles for absorption. Without emulsification, lipid digestion and absorption are severely impaired.",
+          "question": "Discuss the role of bile salts in fat digestion and the impact of bile salt deficiency on nutrient absorption.",
+          "sample_answer": "Bile salts emulsify large fat globules into smaller droplets, increasing surface area for lipase action. Without bile salts, fat digestion is incomplete, leading to steatorrhea and deficiency of fat-soluble vitamins (A, D, E, K).",
           "marks": 5
         }
       ],
@@ -53,45 +52,45 @@
       "set_number": 2,
       "mcqs": [
         {
-          "question": "Aldosterone primarily acts on which part of the nephron to increase sodium reabsorption?",
-          "options": ["Proximal convoluted tubule", "Loop of Henle", "Distal convoluted tubule", "Glomerulus"],
+          "question": "A patient has hyperkalemia. Aldosterone secretion will primarily act on which nephron segment to correct this?",
+          "options": ["Proximal tubule", "Loop of Henle", "Distal convoluted tubule", "Bowman's capsule"],
           "correct_answer": "Distal convoluted tubule",
           "marks": 1
         },
         {
-          "question": "Which zymogen secreted by gastric chief cells is the precursor of the protease pepsin?",
-          "options": ["Pepsinogen", "Trypsinogen", "Prolipase", "Rennin"],
+          "question": "Which gastric enzyme precursor is secreted by chief cells?",
+          "options": ["Pepsinogen", "Trypsinogen", "Prolipase", "Enterokinase"],
           "correct_answer": "Pepsinogen",
           "marks": 1
         },
         {
-          "question": "Which lipid class is a major structural component of cell membranes and is amphipathic?",
-          "options": ["Triglycerides", "Phospholipids", "Steroids", "Waxes"],
-          "correct_answer": "Phospholipids",
+          "question": "Which lipid is a key component of cell membranes and has both hydrophilic and hydrophobic regions?",
+          "options": ["Triglyceride", "Phospholipid", "Steroid", "Waxes"],
+          "correct_answer": "Phospholipid",
           "marks": 1
         }
       ],
       "fill_in_the_blanks": [
         {
-          "question": "The finger-like projections of the small intestinal mucosa that increase surface area are called ________.",
+          "question": "The mucosal projections in the small intestine that increase surface area for absorption are called ________.",
           "correct_answer": "Villi",
           "marks": 1
         },
         {
-          "question": "ATP stores chemical energy in the cell primarily in the form of high-energy ________ bonds.",
+          "question": "ATP stores chemical energy in high-energy ________ bonds.",
           "correct_answer": "Phosphate",
           "marks": 1
         }
       ],
       "saqs": [
         {
-          "question": "Compare glomerular filtration and tubular secretion in the nephron.",
-          "sample_answer": "Glomerular filtration is a bulk-flow, pressure-driven process in the glomerulus that filters water and small solutes (but not blood cells or most proteins) into Bowman's space. Tubular secretion is an active and selective transport process in which substances (e.g., H+, K+, drugs, creatinine) are transported from peritubular capillaries into the tubular lumen to be excreted. Filtration primarily removes plasma fluid; secretion fine-tunes composition and removes additional wastes.",
+          "question": "Differentiate between glomerular filtration and tubular secretion in terms of process and function.",
+          "sample_answer": "Glomerular filtration is a passive, pressure-driven process where plasma minus proteins is filtered into Bowman's capsule. Tubular secretion is an active process moving substances from peritubular capillaries into the nephron (e.g., H+, K+, drugs) for elimination, aiding acid-base balance and waste removal.",
           "marks": 5
         },
         {
-          "question": "Briefly outline the main steps of protein synthesis (transcription and translation).",
-          "sample_answer": "Transcription: DNA in the nucleus is used as a template to synthesize pre-mRNA, which is processed (splicing, capping, polyadenylation) to form mature mRNA. Translation: mRNA travels to ribosomes in the cytoplasm where tRNAs bring amino acids that match codons; initiation begins at AUG, elongation adds amino acids forming a polypeptide, and termination occurs at stop codons, releasing the newly synthesized protein.",
+          "question": "Summarize transcription and translation, highlighting where each occurs.",
+          "sample_answer": "Transcription occurs in the nucleus, where DNA is transcribed into mRNA. Translation occurs at ribosomes in the cytoplasm, where mRNA guides tRNA to assemble amino acids into polypeptides.",
           "marks": 5
         }
       ],
@@ -101,45 +100,45 @@
       "set_number": 3,
       "mcqs": [
         {
-          "question": "Which region of the large intestine primarily acts as temporary storage for feces?",
+          "question": "A constipated patient is found to have a fecal mass in the rectum. Which large intestine segment normally acts as temporary storage for feces?",
           "options": ["Cecum", "Ascending colon", "Rectum", "Sigmoid colon"],
           "correct_answer": "Rectum",
           "marks": 1
         },
         {
-          "question": "Which molecule is the universal energy currency of the cell?",
+          "question": "Which molecule provides immediate usable energy for cellular processes?",
           "options": ["Glucose", "ATP", "NADH", "Glycogen"],
           "correct_answer": "ATP",
           "marks": 1
         },
         {
-          "question": "The triangular area at the base of the bladder defined by the two ureteral orifices and the internal urethral orifice is called the:",
-          "options": ["Trigone", "Dome", "Rugae", "Detrusor"],
+          "question": "The triangular region at the bladder base formed by the ureteric orifices and internal urethral orifice is called the ________.",
+          "options": ["Trigone", "Rugae", "Fundus", "Detrusor"],
           "correct_answer": "Trigone",
           "marks": 1
         }
       ],
       "fill_in_the_blanks": [
         {
-          "question": "Primary bile salts are synthesized from ________ in the liver.",
+          "question": "Primary bile acids are synthesized from ________ in the liver.",
           "correct_answer": "Cholesterol",
           "marks": 1
         },
         {
-          "question": "The conversion of pepsinogen to the active enzyme pepsin requires ________.",
+          "question": "Conversion of pepsinogen to pepsin requires ________.",
           "correct_answer": "Hydrochloric acid",
           "marks": 1
         }
       ],
       "saqs": [
         {
-          "question": "Explain how ADH (antidiuretic hormone) and aldosterone differ in regulating renal water and sodium balance.",
-          "sample_answer": "ADH (from the posterior pituitary) increases water permeability of the collecting ducts by inserting aquaporin channels, promoting water reabsorption and concentrating urine (affects water balance). Aldosterone (from the adrenal cortex) increases Na+ reabsorption and K+ secretion in the distal tubule/collecting duct by upregulating ENaC and Na+/K+ pumps; water follows the reabsorbed sodium, expanding blood volume and affecting blood pressure (affects sodium and indirectly water).",
+          "question": "Compare how ADH and aldosterone regulate water and sodium balance in the nephron.",
+          "sample_answer": "ADH increases water reabsorption in the collecting duct by inserting aquaporins, affecting water balance. Aldosterone increases sodium reabsorption (and potassium secretion) in the distal nephron, indirectly promoting water retention and affecting blood pressure.",
           "marks": 5
         },
         {
-          "question": "Describe major metabolic and detoxification functions of the liver.",
-          "sample_answer": "The liver produces bile for fat digestion, stores glycogen and releases glucose, synthesizes plasma proteins (albumin, clotting factors), converts ammonia to urea, metabolizes drugs and toxins (phase I/II reactions), stores vitamins and iron, and participates in lipid metabolism (cholesterol synthesis and lipoprotein production). These functions are central to homeostasis and detoxification.",
+          "question": "List four major metabolic functions of the liver and their physiological significance.",
+          "sample_answer": "Functions: glycogen storage and glucose release, plasma protein synthesis (albumin, clotting factors), detoxification of ammonia to urea, and metabolism of drugs/toxins. These maintain metabolic balance, immune defense, and detoxification.",
           "marks": 5
         }
       ],
@@ -155,13 +154,13 @@
           "marks": 1
         },
         {
-          "question": "Which of the following is an essential amino acid (must be obtained from the diet)?",
+          "question": "Which amino acid must be obtained from the diet because the body cannot synthesize it?",
           "options": ["Alanine", "Lysine", "Glycine", "Aspartate"],
           "correct_answer": "Lysine",
           "marks": 1
         },
         {
-          "question": "Which pancreatic enzyme is primarily responsible for lipid digestion in the small intestine?",
+          "question": "Which pancreatic enzyme hydrolyzes dietary fats?",
           "options": ["Amylase", "Lipase", "Trypsin", "Enterokinase"],
           "correct_answer": "Lipase",
           "marks": 1
@@ -169,25 +168,25 @@
       ],
       "fill_in_the_blanks": [
         {
-          "question": "The blood protein that maintains colloid oncotic pressure is ________.",
+          "question": "The plasma protein that maintains colloid osmotic pressure is ________.",
           "correct_answer": "Albumin",
           "marks": 1
         },
         {
-          "question": "The structural protein that forms hair and nails is called ________.",
+          "question": "The fibrous protein forming hair, nails, and the epidermis is ________.",
           "correct_answer": "Keratin",
           "marks": 1
         }
       ],
       "saqs": [
         {
-          "question": "Explain the countercurrent multiplier mechanism and the role of the vasa recta in preserving the medullary gradient.",
-          "sample_answer": "The countercurrent multiplier in the loop of Henle creates a progressively increasing osmotic gradient in the medulla: the descending limb is water-permeable (loses water) while the ascending limb actively transports NaCl out (impermeable to water), concentrating the medulla. The vasa recta (capillary loop) runs parallel as a countercurrent exchanger, allowing blood to pick up solutes and lose water without dissipating the gradient, thus preserving the medullary osmotic gradient essential for water reabsorption.",
+          "question": "Explain the countercurrent multiplier and the role of the vasa recta in maintaining the medullary osmotic gradient.",
+          "sample_answer": "The loop of Henle's arrangement allows solute pumping in the ascending limb and water exit in the descending limb, creating an osmotic gradient. The vasa recta preserves this gradient by slow countercurrent blood flow, minimizing solute washout.",
           "marks": 5
         },
         {
-          "question": "Describe the roles of LDL and HDL in cholesterol transport and their implications for cardiovascular disease.",
-          "sample_answer": "LDL (low-density lipoprotein) transports cholesterol from the liver to peripheral tissues and can deposit cholesterol in arterial walls, promoting atherosclerosis and cardiovascular risk. HDL (high-density lipoprotein) collects excess cholesterol from tissues and arterial plaques and transports it back to the liver for excretion (reverse cholesterol transport), which is protective. High LDL and low HDL levels are associated with increased cardiovascular disease risk.",
+          "question": "Contrast LDL and HDL in cholesterol transport and clinical implications.",
+          "sample_answer": "LDL delivers cholesterol to tissues, contributing to atherosclerosis when elevated. HDL removes cholesterol from tissues and returns it to the liver for excretion, reducing cardiovascular risk.",
           "marks": 5
         }
       ],
@@ -197,19 +196,19 @@
       "set_number": 5,
       "mcqs": [
         {
-          "question": "Which enzyme at the intestinal brush border hydrolyzes lactose to glucose and galactose?",
+          "question": "Which brush-border enzyme digests lactose?",
           "options": ["Sucrase", "Lactase", "Maltase", "Enterokinase"],
           "correct_answer": "Lactase",
           "marks": 1
         },
         {
-          "question": "Which organ stores and concentrates bile produced by the liver?",
+          "question": "Which organ stores and concentrates bile?",
           "options": ["Pancreas", "Gallbladder", "Spleen", "Stomach"],
           "correct_answer": "Gallbladder",
           "marks": 1
         },
         {
-          "question": "Which nucleic acid contains the base uracil?",
+          "question": "Which nucleic acid contains uracil instead of thymine?",
           "options": ["DNA", "mRNA", "tRNA", "Both mRNA and tRNA"],
           "correct_answer": "Both mRNA and tRNA",
           "marks": 1
@@ -217,270 +216,510 @@
       ],
       "fill_in_the_blanks": [
         {
-          "question": "The repeating monomeric unit of nucleic acids is called a ________.",
+          "question": "The monomer unit of nucleic acids is called a ________.",
           "correct_answer": "Nucleotide",
           "marks": 1
         },
         {
-          "question": "The chemical reaction that joins monomers into polymers by removing water is called ________.",
+          "question": "The chemical reaction joining monomers by removing water is called ________.",
           "correct_answer": "Dehydration synthesis",
           "marks": 1
         }
       ],
       "saqs": [
         {
-          "question": "Trace the path of a swallowed bolus from the mouth to the stomach, naming the major structures and processes involved.",
-          "sample_answer": "Bolus formation begins in the oral cavity (mastication + saliva), then moves to the oropharynx and laryngopharynx. The pharyngeal phase triggers the swallowing reflex, the epiglottis closes over the trachea, and the upper esophageal sphincter opens. Peristalsis propels the bolus down the esophagus; the lower esophageal (cardiac) sphincter relaxes, allowing entry into the stomach where mechanical and chemical digestion continue.",
+          "question": "Trace the pathway of a swallowed bolus to the stomach and describe the key processes.",
+          "sample_answer": "Mastication and salivation in the mouth form the bolus. Swallowing propels it through the oropharynx and esophagus via peristalsis. The lower esophageal sphincter relaxes to allow entry into the stomach, where gastric digestion begins.",
           "marks": 5
         },
         {
-          "question": "List common causes and key clinical features of acute kidney injury (AKI).",
-          "sample_answer": "Causes: prerenal (hypovolemia, decreased perfusion), intrinsic (acute tubular necrosis from ischemia or nephrotoxins, glomerulonephritis), postrenal (obstruction of urinary tract). Clinical features: rapid rise in serum creatinine and BUN, oliguria or anuria, electrolyte disturbances (hyperkalemia, metabolic acidosis), fluid overload and edema, possible uremic symptoms (nausea, confusion).",
+          "question": "List major causes of acute kidney injury and associated clinical features.",
+          "sample_answer": "Causes: prerenal (e.g., hypovolemia), intrinsic (acute tubular necrosis, glomerulonephritis), postrenal (obstruction). Features: rising creatinine/BUN, oliguria, hyperkalemia, metabolic acidosis, fluid overload.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+        {
+      "set_number": 6,
+      "mcqs": [
+        {
+          "question": "Which vessel carries blood away from the glomerulus after filtration has occurred?",
+          "options": ["Renal vein", "Afferent arteriole", "Efferent arteriole", "Vasa recta"],
+          "correct_answer": "Efferent arteriole",
+          "marks": 1
+        },
+        {
+          "question": "The primary site of nutrient absorption in the digestive system is the:",
+          "options": ["Stomach", "Small intestine", "Large intestine", "Esophagus"],
+          "correct_answer": "Small intestine",
+          "marks": 1
+        },
+        {
+          "question": "A lipid molecule composed of glycerol and three fatty acids is called a:",
+          "options": ["Phospholipid", "Triglyceride", "Steroid", "Glycolipid"],
+          "correct_answer": "Triglyceride",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The capillary network surrounding the loop of Henle is called the ________.",
+          "correct_answer": "Vasa recta",
+          "marks": 1
+        },
+        {
+          "question": "The process of reclaiming water and solutes from filtrate into the blood is called ________.",
+          "correct_answer": "Tubular reabsorption",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Describe the function of the glomerulus and how its structure facilitates filtration.",
+          "sample_answer": "The glomerulus is a tuft of fenestrated capillaries allowing water and small solutes to pass into Bowman's capsule while retaining blood cells and proteins. Its high hydrostatic pressure and specialized filtration membrane optimize ultrafiltration.",
+          "marks": 5
+        },
+        {
+          "question": "Explain why bile salts are essential for efficient fat absorption.",
+          "sample_answer": "Bile salts emulsify large lipid droplets into micelles, increasing surface area for pancreatic lipase to break triglycerides into monoglycerides and free fatty acids, facilitating absorption in the small intestine.",
           "marks": 5
         }
       ],
       "total_marks": 25
     },
     {
-    "set_number": 6,
-    "mcqs": [
-      {
-        "question": "Which vessel carries filtered blood away from the glomerulus?",
-        "options": ["Renal vein", "Afferent arteriole", "Efferent arteriole", "Vasa recta"],
-        "correct_answer": "Efferent arteriole",
-        "marks": 1
-      },
-      {
-        "question": "The main function of the small intestine is:",
-        "options": ["Water absorption", "Protein synthesis", "Nutrient absorption", "Bile production"],
-        "correct_answer": "Nutrient absorption",
-        "marks": 1
-      },
-      {
-        "question": "Which biomolecule is made of glycerol and three fatty acids?",
-        "options": ["Phospholipid", "Triglyceride", "Steroid", "Polysaccharide"],
-        "correct_answer": "Triglyceride",
-        "marks": 1
-      }
-    ],
-    "fill_in_the_blanks": [
-      {
-        "question": "The capillary network surrounding the nephron loop is called the ________.",
-        "correct_answer": "Vasa recta",
-        "marks": 1
-      },
-      {
-        "question": "The process by which the kidney returns water and solutes to the blood is called ________.",
-        "correct_answer": "Tubular reabsorption",
-        "marks": 1
-      }
-    ],
-    "saqs": [
-      {
-        "question": "Briefly describe the role of the glomerulus in urine formation.",
-        "sample_answer": "The glomerulus filters blood under pressure, allowing water and small solutes to pass into Bowman's capsule while retaining blood cells and proteins.",
-        "marks": 5
-      },
-      {
-        "question": "Explain why bile salts are important for fat absorption.",
-        "sample_answer": "Bile salts emulsify fats into small droplets, increasing the surface area for pancreatic lipase to act, improving fat digestion and absorption.",
-        "marks": 5
-      }
-    ],
-    "total_marks": 25
-  },
-  {
-    "set_number": 7,
-    "mcqs": [
-      {
-        "question": "Which hormone increases water reabsorption in the kidneys?",
-        "options": ["Aldosterone", "ADH", "Cortisol", "Erythropoietin"],
-        "correct_answer": "ADH",
-        "marks": 1
-      },
-      {
-        "question": "Which part of the digestive tract has villi?",
-        "options": ["Esophagus", "Small intestine", "Large intestine", "Stomach"],
-        "correct_answer": "Small intestine",
-        "marks": 1
-      },
-      {
-        "question": "Which sugar is a disaccharide?",
-        "options": ["Glucose", "Fructose", "Sucrose", "Galactose"],
-        "correct_answer": "Sucrose",
-        "marks": 1
-      }
-    ],
-    "fill_in_the_blanks": [
-      {
-        "question": "The process of breaking down food into smaller molecules is called ________.",
-        "correct_answer": "Digestion",
-        "marks": 1
-      },
-      {
-        "question": "The nephron structure responsible for filtration is called ________.",
-        "correct_answer": "Bowman's capsule",
-        "marks": 1
-      }
-    ],
-    "saqs": [
-      {
-        "question": "State two main functions of the urinary bladder.",
-        "sample_answer": "The urinary bladder stores urine and contracts to expel it through the urethra during urination.",
-        "marks": 5
-      },
-      {
-        "question": "Briefly explain the difference between monosaccharides and polysaccharides with examples.",
-        "sample_answer": "Monosaccharides are single sugar units (e.g., glucose, fructose), while polysaccharides are long chains of monosaccharides (e.g., starch, glycogen).",
-        "marks": 5
-      }
-    ],
-    "total_marks": 25
-  },
-  {
-    "set_number": 8,
-    "mcqs": [
-      {
-        "question": "Which part of the nephron is mainly responsible for reabsorbing glucose?",
-        "options": ["Loop of Henle", "Distal tubule", "Proximal tubule", "Collecting duct"],
-        "correct_answer": "Proximal tubule",
-        "marks": 1
-      },
-      {
-        "question": "Which structure prevents food from entering the trachea during swallowing?",
-        "options": ["Uvula", "Soft palate", "Epiglottis", "Glottis"],
-        "correct_answer": "Epiglottis",
-        "marks": 1
-      },
-      {
-        "question": "DNA is made up of repeating units called:",
-        "options": ["Amino acids", "Nucleotides", "Fatty acids", "Monosaccharides"],
-        "correct_answer": "Nucleotides",
-        "marks": 1
-      }
-    ],
-    "fill_in_the_blanks": [
-      {
-        "question": "The functional unit of the kidney is the ________.",
-        "correct_answer": "Nephron",
-        "marks": 1
-      },
-      {
-        "question": "The enzyme that digests proteins in the stomach is ________.",
-        "correct_answer": "Pepsin",
-        "marks": 1
-      }
-    ],
-    "saqs": [
-      {
-        "question": "Name the three main processes involved in urine formation.",
-        "sample_answer": "Glomerular filtration, tubular reabsorption, and tubular secretion.",
-        "marks": 5
-      },
-      {
-        "question": "Explain the role of amylase in digestion.",
-        "sample_answer": "Amylase breaks down starch into maltose and other small carbohydrates for easier digestion in the small intestine.",
-        "marks": 5
-      }
-    ],
-    "total_marks": 25
-  },
-  {
-    "set_number": 9,
-    "mcqs": [
-      {
-        "question": "Which kidney structure collects urine before it enters the ureter?",
-        "options": ["Renal pyramid", "Renal pelvis", "Renal capsule", "Calyx"],
-        "correct_answer": "Renal pelvis",
-        "marks": 1
-      },
-      {
-        "question": "The main site of water absorption in the digestive tract is the:",
-        "options": ["Stomach", "Small intestine", "Large intestine", "Rectum"],
-        "correct_answer": "Large intestine",
-        "marks": 1
-      },
-      {
-        "question": "Which lipid type is used mainly for long-term energy storage?",
-        "options": ["Phospholipids", "Steroids", "Triglycerides", "Glycolipids"],
-        "correct_answer": "Triglycerides",
-        "marks": 1
-      }
-    ],
-    "fill_in_the_blanks": [
-      {
-        "question": "The muscular layer of the urinary bladder wall is called the ________ muscle.",
-        "correct_answer": "Detrusor",
-        "marks": 1
-      },
-      {
-        "question": "The enzyme that breaks down fats into glycerol and fatty acids is ________.",
-        "correct_answer": "Lipase",
-        "marks": 1
-      }
-    ],
-    "saqs": [
-      {
-        "question": "Describe the function of the ureters.",
-        "sample_answer": "Ureters are muscular tubes that carry urine from the kidneys to the urinary bladder by peristaltic contractions.",
-        "marks": 5
-      },
-      {
-        "question": "List two differences between saturated and unsaturated fats.",
-        "sample_answer": "Saturated fats have no double bonds between carbon atoms and are solid at room temperature; unsaturated fats have one or more double bonds and are liquid at room temperature.",
-        "marks": 5
-      }
-    ],
-    "total_marks": 25
-  },
-  {
-    "set_number": 10,
-    "mcqs": [
-      {
-        "question": "Which hormone stimulates red blood cell production?",
-        "options": ["Renin", "Erythropoietin", "ADH", "Aldosterone"],
-        "correct_answer": "Erythropoietin",
-        "marks": 1
-      },
-      {
-        "question": "The final section of the small intestine is called the:",
-        "options": ["Jejunum", "Duodenum", "Ileum", "Cecum"],
-        "correct_answer": "Ileum",
-        "marks": 1
-      },
-      {
-        "question": "The building blocks of proteins are:",
-        "options": ["Fatty acids", "Amino acids", "Nucleotides", "Monosaccharides"],
-        "correct_answer": "Amino acids",
-        "marks": 1
-      }
-    ],
-    "fill_in_the_blanks": [
-      {
-        "question": "The functional unit of the liver is called the ________.",
-        "correct_answer": "Lobule",
-        "marks": 1
-      },
-      {
-        "question": "The tube that carries urine from the bladder to the outside is the ________.",
-        "correct_answer": "Urethra",
-        "marks": 1
-      }
-    ],
-    "saqs": [
-      {
-        "question": "Explain the function of the collecting duct in the nephron.",
-        "sample_answer": "The collecting duct reabsorbs water and some salts, concentrating the urine under the influence of ADH before it flows to the renal pelvis.",
-        "marks": 5
-      },
-      {
-        "question": "Describe the role of the stomach in protein digestion.",
-        "sample_answer": "The stomach secretes pepsinogen (activated to pepsin by HCl) to break proteins into peptides, and churns food into chyme for entry into the small intestine.",
-        "marks": 5
-      }
-    ],
-    "total_marks": 25
-  }
+      "set_number": 7,
+      "mcqs": [
+        {
+          "question": "Which hormone increases water reabsorption in the collecting ducts by inserting aquaporins?",
+          "options": ["Aldosterone", "ADH", "Renin", "Erythropoietin"],
+          "correct_answer": "ADH",
+          "marks": 1
+        },
+        {
+          "question": "Villi are found in which section of the digestive tract?",
+          "options": ["Esophagus", "Small intestine", "Large intestine", "Rectum"],
+          "correct_answer": "Small intestine",
+          "marks": 1
+        },
+        {
+          "question": "Which of the following is a disaccharide sugar?",
+          "options": ["Glucose", "Fructose", "Sucrose", "Galactose"],
+          "correct_answer": "Sucrose",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The biochemical process of breaking down large molecules into smaller ones is called ________.",
+          "correct_answer": "Digestion",
+          "marks": 1
+        },
+        {
+          "question": "The nephron structure enclosing the glomerulus is the ________.",
+          "correct_answer": "Bowman's capsule",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "State two main functions of the urinary bladder and explain how its structure supports them.",
+          "sample_answer": "The bladder stores urine and expels it during micturition. Its transitional epithelium allows stretching, while the detrusor muscle contracts to expel urine.",
+          "marks": 5
+        },
+        {
+          "question": "Differentiate between monosaccharides and polysaccharides, giving one example of each.",
+          "sample_answer": "Monosaccharides are single sugar units (e.g., glucose) used for immediate energy. Polysaccharides are long chains of monosaccharides (e.g., glycogen) used for storage.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 8,
+      "mcqs": [
+        {
+          "question": "Which nephron segment is primarily responsible for glucose reabsorption?",
+          "options": ["Loop of Henle", "Distal tubule", "Proximal tubule", "Collecting duct"],
+          "correct_answer": "Proximal tubule",
+          "marks": 1
+        },
+        {
+          "question": "Which structure covers the trachea during swallowing to prevent aspiration?",
+          "options": ["Uvula", "Soft palate", "Epiglottis", "Glottis"],
+          "correct_answer": "Epiglottis",
+          "marks": 1
+        },
+        {
+          "question": "DNA is composed of repeating units called:",
+          "options": ["Amino acids", "Nucleotides", "Monosaccharides", "Fatty acids"],
+          "correct_answer": "Nucleotides",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The functional unit of the kidney is the ________.",
+          "correct_answer": "Nephron",
+          "marks": 1
+        },
+        {
+          "question": "The enzyme that digests proteins in the stomach is ________.",
+          "correct_answer": "Pepsin",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "List the three main processes of urine formation and briefly describe each.",
+          "sample_answer": "Glomerular filtration: plasma is filtered into Bowman's capsule. Tubular reabsorption: nutrients and water are reabsorbed into the blood. Tubular secretion: additional wastes are actively transported into the tubule.",
+          "marks": 5
+        },
+        {
+          "question": "Describe the role of amylase in carbohydrate digestion.",
+          "sample_answer": "Amylase breaks down starch into maltose and other disaccharides, initiating carbohydrate digestion in the mouth and continuing in the small intestine.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 9,
+      "mcqs": [
+        {
+          "question": "Which kidney structure collects urine before it enters the ureter?",
+          "options": ["Renal pyramid", "Renal pelvis", "Renal capsule", "Calyx"],
+          "correct_answer": "Renal pelvis",
+          "marks": 1
+        },
+        {
+          "question": "The main site of water absorption in the digestive tract is the:",
+          "options": ["Stomach", "Small intestine", "Large intestine", "Rectum"],
+          "correct_answer": "Large intestine",
+          "marks": 1
+        },
+        {
+          "question": "Which lipid serves as the main long-term energy storage form?",
+          "options": ["Phospholipids", "Steroids", "Triglycerides", "Glycolipids"],
+          "correct_answer": "Triglycerides",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The muscular layer of the urinary bladder wall is the ________ muscle.",
+          "correct_answer": "Detrusor",
+          "marks": 1
+        },
+        {
+          "question": "The enzyme that breaks down triglycerides into glycerol and fatty acids is ________.",
+          "correct_answer": "Lipase",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Describe the function of the ureters in the urinary system.",
+          "sample_answer": "The ureters are muscular tubes that propel urine from the renal pelvis to the bladder via peristaltic contractions.",
+          "marks": 5
+        },
+        {
+          "question": "List two differences between saturated and unsaturated fatty acids.",
+          "sample_answer": "Saturated fatty acids have no double bonds and are solid at room temperature; unsaturated fatty acids have one or more double bonds and are usually liquid at room temperature.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 10,
+      "mcqs": [
+        {
+          "question": "Which hormone is secreted by the kidney to stimulate red blood cell production?",
+          "options": ["Renin", "Erythropoietin", "ADH", "Aldosterone"],
+          "correct_answer": "Erythropoietin",
+          "marks": 1
+        },
+        {
+          "question": "The final section of the small intestine is called the:",
+          "options": ["Jejunum", "Duodenum", "Ileum", "Cecum"],
+          "correct_answer": "Ileum",
+          "marks": 1
+        },
+        {
+          "question": "Proteins are made from which type of monomer?",
+          "options": ["Fatty acids", "Amino acids", "Nucleotides", "Monosaccharides"],
+          "correct_answer": "Amino acids",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The functional unit of the liver is the ________.",
+          "correct_answer": "Lobule",
+          "marks": 1
+        },
+        {
+          "question": "The tube that carries urine from the bladder to the exterior is the ________.",
+          "correct_answer": "Urethra",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Explain the function of the collecting duct in regulating urine concentration.",
+          "sample_answer": "The collecting duct adjusts water reabsorption based on ADH levels, concentrating or diluting urine as needed to maintain fluid balance.",
+          "marks": 5
+        },
+        {
+          "question": "Describe the role of the stomach in the digestion of proteins.",
+          "sample_answer": "The stomach secretes pepsinogen, which is activated to pepsin by HCl, breaking proteins into peptides while churning food into chyme for delivery to the small intestine.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+        {
+      "set_number": 11,
+      "mcqs": [
+        {
+          "question": "Which connective tissue membrane surrounds each muscle fiber?",
+          "options": ["Endomysium", "Perimysium", "Epimysium", "Sarcolemma"],
+          "correct_answer": "Endomysium",
+          "marks": 1
+        },
+        {
+          "question": "Which enzyme activates trypsinogen into trypsin in the small intestine?",
+          "options": ["Enterokinase", "Pepsin", "Amylase", "Lipase"],
+          "correct_answer": "Enterokinase",
+          "marks": 1
+        },
+        {
+          "question": "Which bone type is primarily found in the diaphysis of long bones?",
+          "options": ["Spongy bone", "Compact bone", "Trabecular bone", "Cancellous bone"],
+          "correct_answer": "Compact bone",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The plasma membrane of a muscle fiber is called the ________.",
+          "correct_answer": "Sarcolemma",
+          "marks": 1
+        },
+        {
+          "question": "The enzyme that digests starch into maltose is ________.",
+          "correct_answer": "Amylase",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Explain the sliding filament theory of muscle contraction.",
+          "sample_answer": "The sliding filament theory describes how actin and myosin filaments slide past each other, shortening the sarcomere. Myosin heads bind to actin, pivot using ATP hydrolysis, and pull actin filaments inward, producing contraction until Ca²⁺ is removed and tropomyosin blocks binding sites.",
+          "marks": 5
+        },
+        {
+          "question": "Describe how peristalsis moves food along the gastrointestinal tract.",
+          "sample_answer": "Peristalsis consists of alternating contractions of circular and longitudinal smooth muscles in the GI wall. Circular contractions push the bolus forward, while longitudinal contractions shorten the segment ahead, creating a coordinated wave that propels contents distally.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 12,
+      "mcqs": [
+        {
+          "question": "Which structure stores calcium in skeletal muscle fibers?",
+          "options": ["T-tubule", "Mitochondria", "Sarcoplasmic reticulum", "Myofibril"],
+          "correct_answer": "Sarcoplasmic reticulum",
+          "marks": 1
+        },
+        {
+          "question": "The biceps brachii is an example of which type of muscle?",
+          "options": ["Smooth", "Skeletal", "Cardiac", "Involuntary"],
+          "correct_answer": "Skeletal",
+          "marks": 1
+        },
+        {
+          "question": "Which digestive enzyme is secreted in an inactive form to prevent self-digestion?",
+          "options": ["Pepsinogen", "Lipase", "Amylase", "Maltase"],
+          "correct_answer": "Pepsinogen",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The neurotransmitter released at the neuromuscular junction is ________.",
+          "correct_answer": "Acetylcholine",
+          "marks": 1
+        },
+        {
+          "question": "The first section of the small intestine is called the ________.",
+          "correct_answer": "Duodenum",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Outline the sequence of events at the neuromuscular junction leading to muscle contraction.",
+          "sample_answer": "An action potential reaches the axon terminal, causing Ca²⁺ influx and release of acetylcholine into the synaptic cleft. ACh binds to receptors on the sarcolemma, triggering depolarization and an action potential that travels down T-tubules, leading to Ca²⁺ release from the sarcoplasmic reticulum, enabling cross-bridge cycling.",
+          "marks": 5
+        },
+        {
+          "question": "Explain the role of the pancreas in digestion.",
+          "sample_answer": "The pancreas secretes digestive enzymes (amylase, lipase, proteases) and bicarbonate into the duodenum. Enzymes break down carbohydrates, fats, and proteins; bicarbonate neutralizes acidic chyme to optimize enzyme function.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 13,
+      "mcqs": [
+        {
+          "question": "Which type of joint is the knee joint?",
+          "options": ["Ball-and-socket", "Hinge", "Pivot", "Saddle"],
+          "correct_answer": "Hinge",
+          "marks": 1
+        },
+        {
+          "question": "Which gastric cell type secretes hydrochloric acid?",
+          "options": ["Chief cells", "Parietal cells", "G cells", "Goblet cells"],
+          "correct_answer": "Parietal cells",
+          "marks": 1
+        },
+        {
+          "question": "Which connective tissue attaches muscle to bone?",
+          "options": ["Ligament", "Tendon", "Cartilage", "Fascia"],
+          "correct_answer": "Tendon",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The functional contractile unit of a muscle fiber is the ________.",
+          "correct_answer": "Sarcomere",
+          "marks": 1
+        },
+        {
+          "question": "The primary movement at the elbow joint during a biceps curl is ________.",
+          "correct_answer": "Flexion",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Describe the difference between isotonic and isometric muscle contractions with examples.",
+          "sample_answer": "In isotonic contractions, muscle length changes while tension remains constant (e.g., lifting a dumbbell). In isometric contractions, muscle length stays the same while tension increases (e.g., holding a plank position).",
+          "marks": 5
+        },
+        {
+          "question": "Explain the mechanical and chemical digestion processes in the stomach.",
+          "sample_answer": "Mechanical digestion occurs via churning and mixing of food by muscular contractions. Chemical digestion involves gastric juice containing HCl, pepsinogen (activated to pepsin), and mucus, breaking down proteins and forming chyme.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 14,
+      "mcqs": [
+        {
+          "question": "Which movement decreases the angle between two bones at a joint?",
+          "options": ["Extension", "Flexion", "Abduction", "Rotation"],
+          "correct_answer": "Flexion",
+          "marks": 1
+        },
+        {
+          "question": "The enzyme responsible for converting fibrinogen to fibrin in clotting is:",
+          "options": ["Thrombin", "Plasmin", "Pepsin", "Trypsin"],
+          "correct_answer": "Thrombin",
+          "marks": 1
+        },
+        {
+          "question": "Which ligament prevents anterior displacement of the tibia relative to the femur?",
+          "options": ["ACL", "PCL", "MCL", "LCL"],
+          "correct_answer": "ACL",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The shoulder joint is classified as a ________ joint.",
+          "correct_answer": "Ball-and-socket",
+          "marks": 1
+        },
+        {
+          "question": "The acidic mixture of partially digested food in the stomach is called ________.",
+          "correct_answer": "Chyme",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Discuss the importance of synovial fluid in joint function.",
+          "sample_answer": "Synovial fluid lubricates joint surfaces, reduces friction, absorbs shock, and nourishes articular cartilage through diffusion of nutrients and waste products.",
+          "marks": 5
+        },
+        {
+          "question": "Explain the role of gastric mucus and bicarbonate in protecting the stomach lining.",
+          "sample_answer": "Mucus forms a physical barrier, while bicarbonate neutralizes acid at the epithelial surface, preventing erosion by HCl and pepsin.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 15,
+      "mcqs": [
+        {
+          "question": "Which ion binds to troponin to initiate skeletal muscle contraction?",
+          "options": ["Sodium", "Potassium", "Calcium", "Magnesium"],
+          "correct_answer": "Calcium",
+          "marks": 1
+        },
+        {
+          "question": "Which part of the small intestine absorbs the majority of nutrients?",
+          "options": ["Duodenum", "Jejunum", "Ileum", "Cecum"],
+          "correct_answer": "Jejunum",
+          "marks": 1
+        },
+        {
+          "question": "Which bone cell type is responsible for bone resorption?",
+          "options": ["Osteoblast", "Osteoclast", "Osteocyte", "Chondrocyte"],
+          "correct_answer": "Osteoclast",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The repeating unit in myofibrils composed of actin and myosin is the ________.",
+          "correct_answer": "Sarcomere",
+          "marks": 1
+        },
+        {
+          "question": "The valve controlling the passage of chyme from the stomach to the duodenum is the ________ sphincter.",
+          "correct_answer": "Pyloric",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Describe the role of osteoblasts and osteoclasts in bone remodeling.",
+          "sample_answer": "Osteoblasts build bone by depositing osteoid and facilitating mineralization. Osteoclasts resorb bone by secreting acids and enzymes, maintaining calcium balance and repairing microdamage.",
+          "marks": 5
+        },
+        {
+          "question": "Outline the process of fat digestion and absorption from the small intestine.",
+          "sample_answer": "Bile salts emulsify fats into micelles, pancreatic lipase breaks triglycerides into fatty acids and monoglycerides, which are absorbed into enterocytes, reassembled into triglycerides, packaged into chylomicrons, and transported via lymphatics.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    }
+
   ]
 }
-

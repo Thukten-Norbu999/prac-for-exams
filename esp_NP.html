@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Sets — Practice</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-1: #0f1724; /* near black-blue */
+      --card: rgba(255,255,255,0.05);
+      --accent: #0d9488; /* teal */
+      --primary: #10316b; /* dark blue */
+      --highlight: #fbbf24; /* amber */
+      --muted: rgba(255,255,255,0.65);
+    }
+    *{box-sizing: border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #071226 0%, #0b2740 100%);
+      color: #e6eef8;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:48px 20px;
+    }
+
+    .wrap {
+      width: 1100px;
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 28px;
+      align-items:start;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    header.site {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:18px;
+    }
+    header.site h1 {
+      font-size:1.15rem;
+      margin:0;
+      font-weight:700;
+      color:white;
+      letter-spacing: -0.2px;
+    }
+    header.site p {
+      margin:0;
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+
+    #selected-set-info {
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin-bottom:12px;
+    }
+    .set-badge {
+      background: rgba(255,255,255,0.06);
+      color:var(--highlight);
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:700;
+      letter-spacing:0.6px;
+      font-size:0.9rem;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    #quiz-container {
+      margin-top:8px;
+    }
+
+    h4.section-title {
+      margin:18px 0 10px 0;
+      color:#dff6f1;
+      font-size:1rem;
+      border-left:3px solid var(--accent);
+      padding-left:10px;
+      font-weight:600;
+    }
+
+    .question {
+      margin:12px 0 18px 0;
+      padding:14px;
+      background: rgba(255,255,255,0.02);
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .question h5 { margin:0 0 8px 0; font-size:0.98rem; color:#eaf7ff; }
+    .question img { max-width:100%; border-radius:8px; margin-top:8px; }
+
+    .option-wrapper { padding:8px 10px; border-radius:8px; transition: all .15s ease; margin-bottom:6px; display:flex; align-items:center; }
+    .option-wrapper input { margin-right:10px; cursor:pointer; }
+    .bg-success { background: rgba(13,148,136,0.95) !important; color: #042024; font-weight:700; }
+    .bg-danger  { background: rgba(220,38,38,0.92) !important; color: white; font-weight:700; }
+    .text-white { color:white !important; }
+
+    textarea.form-control, input.form-control {
+      width:100%;
+      padding:10px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
+      color: #eaf7ff;
+      resize:vertical;
+      font-size:0.95rem;
+    }
+
+    .controls {
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:flex-end;
+      margin-top:18px;
+    }
+
+    button.btn {
+      border: none;
+      padding:10px 14px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    button.primary {
+      background: linear-gradient(90deg,var(--primary), #153f82);
+      color: white;
+      box-shadow: 0 6px 18px rgba(9,25,60,0.45);
+    }
+    button.ghost {
+      background: transparent;
+      color: var(--muted);
+      border:1px solid rgba(255,255,255,0.04);
+    }
+    button.accent {
+      background: var(--highlight);
+      color: var(--primary);
+    }
+
+    /* right column (results panel + actions) */
+    .side {
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .results-panel {
+      padding:18px;
+      border-radius:12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .results-panel h3 { margin:0 0 8px 0; font-size:1rem; color:#dff6f1; }
+    .results-panel p { margin:0; color:var(--muted); font-size:0.95rem; }
+
+    .small-muted { color:var(--muted); font-size:0.85rem; margin-top:8px; }
+
+    .sample-answer {
+      margin-top:8px;
+      background: rgba(13,148,136,0.08);
+      padding:10px;border-radius:8px;color:#dff6f1;border:1px solid rgba(13,148,136,0.08);
+    }
+
+    @media (max-width: 980px){
+      .wrap{ grid-template-columns: 1fr; padding:0 12px; }
+      .side { order: -1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="site">
+        <div>
+          <h1>prac-for-exam — Quiz</h1>
+          <p class="small-muted">Auto-loaded from local <code>quiz_sets.json</code></p>
+        </div>
+        <div>
+          <button id="change-set-btn" class="btn accent">Change Set</button>
+        </div>
+      </header>
+
+      <div id="selected-set-info" aria-live="polite"></div>
+
+      <div id="quiz-container"></div>
+
+      <div class="controls">
+        <div style="flex:1" class="small-muted">SAQs are not auto-graded</div>
+        <button id="submit-btn" class="btn primary">Submit</button>
+      </div>
+    </div>
+
+    <aside class="side">
+      <div class="results-panel card">
+        <h3 id="results">No attempt yet</h3>
+        <div id="results-breakdown" class="small-muted"></div>
+        <div class="small-muted" style="margin-top:12px;">Auto-graded: MCQs, Multi-select, Fill-in-the-blanks. SAQs require manual grading.</div>
+      </div>
+
+      <div class="card">
+        <h4 style="margin:0 0 8px 0;">Tips</h4>
+        <ul style="margin:0;padding-left:18px;color:var(--muted)">
+          <li>Click <strong>Change Set</strong> to load another set from the JSON.</li>
+          <li>Submit will highlight correct / wrong answers for auto-graded items.</li>
+          <li>Run this from a simple static server so fetch('quiz_sets.json') works.</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    // Utility
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function normalizeSet(obj) {
+      const set = Object.assign({}, obj);
+      if (!set.fill_blanks && set.fill_in_the_blanks) set.fill_blanks = set.fill_in_the_blanks;
+      if (!set.multi_mcqs && set.multi_selects) set.multi_mcqs = set.multi_selects;
+      return set;
+    }
+
+    // App state
+    let loadedJson = null;
+    let currentSet = null;
+    let currentSetIndex = null;
+
+    const quizContainer = document.getElementById('quiz-container');
+    const selectedSetInfo = document.getElementById('selected-set-info');
+    const resultsEl = document.getElementById('results');
+    const breakdownEl = document.getElementById('results-breakdown');
+    const changeBtn = document.getElementById('change-set-btn');
+
+    // Render
+    function renderQuizFromSet(setObj, idx = null) {
+      const data = normalizeSet(setObj || {});
+      currentSet = data;
+      currentSetIndex = idx;
+      quizContainer.innerHTML = '';
+      selectedSetInfo.innerHTML = '';
+
+      // header
+      const header = document.createElement('div');
+      header.innerHTML = `<div class="set-badge">Set ${data.set_number ?? (idx !== null ? idx + 1 : '—')}</div>`;
+      selectedSetInfo.appendChild(header);
+
+      function sectionTitle(text) {
+        const el = document.createElement('h4');
+        el.className = 'section-title';
+        el.innerText = text;
+        return el;
+      }
+
+      // MCQs
+      if (Array.isArray(data.mcqs) && data.mcqs.length) {
+        const mcqSection = document.createElement('div');
+        mcqSection.appendChild(sectionTitle('Multiple Choice Questions'));
+        data.mcqs.forEach((q, index) => {
+          const qDiv = document.createElement('div');
+          qDiv.className = 'question';
+          const qTitle = document.createElement('h5');
+          qTitle.innerText = `${index + 1}. ${q.question}`;
+          qDiv.appendChild(qTitle);
+          if (q.image) {
+            const img = document.createElement('img');
+            img.src = q.image;
+            qDiv.appendChild(img);
+          }
+          const optionsDiv = document.createElement('div');
+          const shuffled = shuffle([...q.options || []]);
+          shuffled.forEach(opt => {
+            const wrapper = document.createElement('label');
+            wrapper.className = 'option-wrapper';
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.name = `mcq_${index}`;
+            input.value = opt;
+            input.className = 'me-2';
+            wrapper.appendChild(input);
+            const span = document.createElement('span');
+            span.innerText = opt;
+            wrapper.appendChild(span);
+            optionsDiv.appendChild(wrapper);
+          });
+          qDiv.appendChild(optionsDiv);
+          mcqSection.appendChild(qDiv);
+        });
+        quizContainer.appendChild(mcqSection);
+      }
+
+      // Multi-select
+      if (Array.isArray(data.multi_mcqs) && data.multi_mcqs.length) {
+        const multiSection = document.createElement('div');
+        multiSection.appendChild(sectionTitle('Multi-Select Questions'));
+        data.multi_mcqs.forEach((q, index) => {
+          const qDiv = document.createElement('div');
+          qDiv.className = 'question';
+          const qTitle = document.createElement('h5');
+          qTitle.innerText = `${index + 1}. ${q.question} (Select all that apply)`;
+          qDiv.appendChild(qTitle);
+          if (q.image) {
+            const img = document.createElement('img');
+            img.src = q.image;
+            qDiv.appendChild(img);
+          }
+          const optionsDiv = document.createElement('div');
+          const shuffled = shuffle([...q.options || []]);
+          shuffled.forEach(opt => {
+            const wrapper = document.createElement('label');
+            wrapper.className = 'option-wrapper';
+            const input = document.createElement('input');
+            input.type = 'checkbox';
+            input.name = `multi_${index}`;
+            input.value = opt;
+            wrapper.appendChild(input);
+            wrapper.appendChild(document.createTextNode(opt));
+            optionsDiv.appendChild(wrapper);
+          });
+          qDiv.appendChild(optionsDiv);
+          multiSection.appendChild(qDiv);
+        });
+        quizContainer.appendChild(multiSection);
+      }
+
+      // SAQs
+      if (Array.isArray(data.saqs) && data.saqs.length) {
+        const saqSection = document.createElement('div');
+        saqSection.appendChild(sectionTitle('Short Answer Questions'));
+        data.saqs.forEach((q, index) => {
+          const qDiv = document.createElement('div');
+          qDiv.className = 'question';
+          const qTitle = document.createElement('h5');
+          qTitle.innerText = `${index + 1}. ${q.question} (${q.marks ?? ''} marks)`;
+          qDiv.appendChild(qTitle);
+          if (q.image) {
+            const img = document.createElement('img');
+            img.src = q.image;
+            qDiv.appendChild(img);
+          }
+          const textArea = document.createElement('textarea');
+          textArea.className = 'form-control';
+          textArea.rows = 4;
+          textArea.name = `saq_${index}`;
+          qDiv.appendChild(textArea);
+
+          const answerBtn = document.createElement('button');
+          answerBtn.type = 'button';
+          answerBtn.className = 'btn ghost';
+          answerBtn.style.marginTop = '10px';
+          answerBtn.innerText = 'Show Sample Answer';
+
+          const answerDiv = document.createElement('div');
+          answerDiv.className = 'sample-answer';
+          answerDiv.style.display = 'none';
+          answerDiv.innerHTML = `<strong>Sample Answer:</strong><div style="margin-top:8px;color:var(--muted)">${q.sample_answer ? q.sample_answer : '<em>No sample answer available.</em>'}</div>`;
+
+          answerBtn.addEventListener('click', () => {
+            answerDiv.style.display = answerDiv.style.display === 'none' ? 'block' : 'none';
+          });
+
+          qDiv.appendChild(answerBtn);
+          qDiv.appendChild(answerDiv);
+          saqSection.appendChild(qDiv);
+        });
+        quizContainer.appendChild(saqSection);
+      }
+
+      // Fill in the blanks
+      if (Array.isArray(data.fill_blanks) && data.fill_blanks.length) {
+        const fillSection = document.createElement('div');
+        fillSection.appendChild(sectionTitle('Fill in the Blanks'));
+        data.fill_blanks.forEach((q, index) => {
+          const qDiv = document.createElement('div');
+          qDiv.className = 'question';
+          const qTitle = document.createElement('h5');
+          qTitle.innerText = `${index + 1}. ${q.question}`;
+          qDiv.appendChild(qTitle);
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.name = `fill_${index}`;
+          input.className = 'form-control';
+          input.placeholder = 'Your answer...';
+          qDiv.appendChild(input);
+
+          const correctDiv = document.createElement('div');
+          correctDiv.className = 'small-muted correct-fill';
+          correctDiv.style.display = 'none';
+          correctDiv.style.marginTop = '10px';
+          correctDiv.innerHTML = `Correct: <span class="fw-bold"></span>`;
+          qDiv.appendChild(correctDiv);
+
+          fillSection.appendChild(qDiv);
+        });
+        quizContainer.appendChild(fillSection);
+      }
+
+      if (!quizContainer.innerHTML.trim()) {
+        quizContainer.innerHTML = '<p class="small-muted">No questions found in the chosen set.</p>';
+      }
+
+      // reset results area
+      resultsEl.innerText = 'No attempt yet';
+      breakdownEl.innerText = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Pick random set index (avoid same index if possible)
+    function pickRandomSetIndex() {
+      if (!loadedJson) return null;
+      const sets = Array.isArray(loadedJson.sets) ? loadedJson.sets : (Array.isArray(loadedJson) ? loadedJson : null);
+      if (!sets || sets.length === 0) return null;
+      if (sets.length === 1) return 0;
+      let idx;
+      do { idx = Math.floor(Math.random() * sets.length); } while (idx === currentSetIndex);
+      return idx;
+    }
+
+    // Load JSON and show one set
+    async function loadQuizJson() {
+      try {
+        const res = await fetch('quest.json', {cache: "no-store"});
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        loadedJson = json;
+        // if top-level sets array
+        const sets = Array.isArray(json.sets) ? json.sets : (Array.isArray(json) ? json : null);
+        if (sets && sets.length) {
+          const idx = Math.floor(Math.random() * sets.length);
+          renderQuizFromSet(normalizeSet(sets[idx]), idx);
+        } else {
+          // treat the loaded object as a single set
+          renderQuizFromSet(normalizeSet(json), null);
+        }
+      } catch (err) {
+        quizContainer.innerHTML = `<div style="color:#ffb4a2;padding:12px;border-radius:8px;background:rgba(0,0,0,0.2)">Error loading quiz_sets.json — ${err.message}</div>`;
+      }
+    }
+
+    // Change set button handler
+    changeBtn.addEventListener('click', () => {
+      if (!loadedJson) return;
+      const sets = Array.isArray(loadedJson.sets) ? loadedJson.sets : (Array.isArray(loadedJson) ? loadedJson : null);
+      if (!sets || sets.length === 0) return;
+      // pick a different index
+      const idx = pickRandomSetIndex();
+      if (idx === null) return;
+      renderQuizFromSet(normalizeSet(sets[idx]), idx);
+    });
+
+    // Submit (auto-grade MCQ, multi, fill)
+    document.getElementById('submit-btn').addEventListener('click', () => {
+      if (!currentSet) { alert('No quiz loaded.'); return; }
+      let score = 0;
+      let totalCount = 0;
+      const breakdown = [];
+
+      // MCQs
+      if (Array.isArray(currentSet.mcqs) && currentSet.mcqs.length) {
+        totalCount += currentSet.mcqs.length;
+        currentSet.mcqs.forEach((q, idx) => {
+          const selected = document.querySelector(`input[name=mcq_${idx}]:checked`);
+          const options = document.getElementsByName(`mcq_${idx}`);
+          options.forEach(opt => {
+            const parent = opt.closest('.option-wrapper');
+            if (!parent) return;
+            parent.classList.remove('bg-success','bg-danger','text-white','p-2');
+            if (opt.value === q.correct_answer) {
+              parent.classList.add('bg-success','text-white');
+            } else if (opt.checked && opt.value !== q.correct_answer) {
+              parent.classList.add('bg-danger','text-white');
+            }
+          });
+          if (selected && selected.value === q.correct_answer) {
+            score++;
+            breakdown.push({type:'MCQ', question: q.question, result: 'correct'});
+          } else {
+            breakdown.push({type:'MCQ', question: q.question, result: 'wrong'});
+          }
+        });
+      }
+
+      // Multi-select
+      if (Array.isArray(currentSet.multi_mcqs) && currentSet.multi_mcqs.length) {
+        totalCount += currentSet.multi_mcqs.length;
+        currentSet.multi_mcqs.forEach((q, idx) => {
+          const checkedEls = Array.from(document.querySelectorAll(`input[name=multi_${idx}]:checked`)).map(e => e.value);
+          const options = document.getElementsByName(`multi_${idx}`);
+          options.forEach(opt => {
+            const parent = opt.closest('.option-wrapper');
+            if (!parent) return;
+            parent.classList.remove('bg-success','bg-danger','text-white');
+            if ((q.answer || []).includes(opt.value)) {
+              parent.classList.add('bg-success','text-white');
+            } else if (opt.checked && !(q.answer || []).includes(opt.value)) {
+              parent.classList.add('bg-danger','text-white');
+            }
+          });
+          const given = checkedEls.slice().sort();
+          const correct = (q.answer || []).slice().sort();
+          const isMatch = given.length === correct.length && given.every((v,i)=>v===correct[i]);
+          if (isMatch) { score++; breakdown.push({type:'Multi', question: q.question, result: 'correct'}); }
+          else { breakdown.push({type:'Multi', question: q.question, result: 'wrong'}); }
+        });
+      }
+
+      // Fill-in-the-blanks
+      if (Array.isArray(currentSet.fill_blanks) && currentSet.fill_blanks.length) {
+        totalCount += currentSet.fill_blanks.length;
+        currentSet.fill_blanks.forEach((q, idx) => {
+          const input = document.querySelector(`input[name=fill_${idx}]`);
+          const user = input ? input.value.trim().toLowerCase() : '';
+          const correct = (q.correct_answer || q.answer || '').toString().trim().toLowerCase();
+          const correctDiv = input ? input.parentElement.querySelector('.correct-fill') : null;
+          if (correctDiv) {
+            correctDiv.style.display = 'none';
+            const span = correctDiv.querySelector('span');
+            if (span) span.innerText = correct || '';
+          }
+          if (user && user === correct && correct !== '') {
+            score++;
+            breakdown.push({type:'Fill', question: q.question, result:'correct'});
+          } else {
+            breakdown.push({type:'Fill', question: q.question, result:'wrong'});
+            if (correctDiv) correctDiv.style.display = 'block';
+          }
+        });
+      }
+
+      // SAQs: add to breakdown as manual
+      if (Array.isArray(currentSet.saqs) && currentSet.saqs.length) {
+        currentSet.saqs.forEach((q, idx) => {
+          breakdown.push({type:'SAQ', question: q.question, result:'manual'});
+        });
+      }
+
+      resultsEl.innerText = `You scored ${score} out of ${totalCount} (auto-graded items)`;
+      const short = breakdown.slice(0, 50).map((b,i) => `${i+1}. [${b.type}] ${b.result.toUpperCase()} — ${b.question}`).join('\n');
+      breakdownEl.innerText = short || '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // load on start
+    window.addEventListener('DOMContentLoaded', loadQuizJson);
+  </script>
+</body>
+</html>

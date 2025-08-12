@@ -1,0 +1,246 @@
+
+{
+  "sets": [
+    {
+      "set_number": 1,
+      "mcqs": [
+        {
+          "question": "Which arteriole carries blood into the glomerulus?",
+          "options": ["Efferent arteriole", "Afferent arteriole", "Renal vein", "Vasa recta"],
+          "correct_answer": "Afferent arteriole",
+          "marks": 1
+        },
+        {
+          "question": "Intrinsic factor produced by gastric parietal cells is essential for absorption of which vitamin?",
+          "options": ["Vitamin A", "Vitamin C", "Vitamin B12", "Vitamin D"],
+          "correct_answer": "Vitamin B12",
+          "marks": 1
+        },
+        {
+          "question": "Which of the following is a monosaccharide?",
+          "options": ["Glucose", "Sucrose", "Lactose", "Starch"],
+          "correct_answer": "Glucose",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The hormone produced by the kidney that stimulates red blood cell production is ________.",
+          "correct_answer": "Erythropoietin",
+          "marks": 1
+        },
+        {
+          "question": "The loop of Henle primarily establishes the osmotic gradient in the renal ________.",
+          "correct_answer": "Medulla",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Describe the role of the loop of Henle in concentrating urine.",
+          "sample_answer": "The loop of Henle establishes a medullary osmotic gradient via countercurrent flow: the descending limb is permeable to water (allowing water to leave into the hyperosmotic medulla) while the ascending limb actively transports NaCl out but is impermeable to water. This creates and maintains the concentration gradient that permits water reabsorption from the collecting duct under ADH, concentrating the urine.",
+          "marks": 5
+        },
+        {
+          "question": "Explain emulsification of fats and why it is necessary for lipid digestion.",
+          "sample_answer": "Emulsification is the mechanical breakdown of large fat droplets into many small droplets by bile salts (amphipathic molecules). This increases surface area for pancreatic lipase to act, enabling efficient hydrolysis of triglycerides into monoglycerides and fatty acids, which then form micelles for absorption. Without emulsification, lipid digestion and absorption are severely impaired.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 2,
+      "mcqs": [
+        {
+          "question": "Aldosterone primarily acts on which part of the nephron to increase sodium reabsorption?",
+          "options": ["Proximal convoluted tubule", "Loop of Henle", "Distal convoluted tubule", "Glomerulus"],
+          "correct_answer": "Distal convoluted tubule",
+          "marks": 1
+        },
+        {
+          "question": "Which zymogen secreted by gastric chief cells is the precursor of the protease pepsin?",
+          "options": ["Pepsinogen", "Trypsinogen", "Prolipase", "Rennin"],
+          "correct_answer": "Pepsinogen",
+          "marks": 1
+        },
+        {
+          "question": "Which lipid class is a major structural component of cell membranes and is amphipathic?",
+          "options": ["Triglycerides", "Phospholipids", "Steroids", "Waxes"],
+          "correct_answer": "Phospholipids",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The finger-like projections of the small intestinal mucosa that increase surface area are called ________.",
+          "correct_answer": "Villi",
+          "marks": 1
+        },
+        {
+          "question": "ATP stores chemical energy in the cell primarily in the form of high-energy ________ bonds.",
+          "correct_answer": "Phosphate",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Compare glomerular filtration and tubular secretion in the nephron.",
+          "sample_answer": "Glomerular filtration is a bulk-flow, pressure-driven process in the glomerulus that filters water and small solutes (but not blood cells or most proteins) into Bowman's space. Tubular secretion is an active and selective transport process in which substances (e.g., H+, K+, drugs, creatinine) are transported from peritubular capillaries into the tubular lumen to be excreted. Filtration primarily removes plasma fluid; secretion fine-tunes composition and removes additional wastes.",
+          "marks": 5
+        },
+        {
+          "question": "Briefly outline the main steps of protein synthesis (transcription and translation).",
+          "sample_answer": "Transcription: DNA in the nucleus is used as a template to synthesize pre-mRNA, which is processed (splicing, capping, polyadenylation) to form mature mRNA. Translation: mRNA travels to ribosomes in the cytoplasm where tRNAs bring amino acids that match codons; initiation begins at AUG, elongation adds amino acids forming a polypeptide, and termination occurs at stop codons, releasing the newly synthesized protein.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 3,
+      "mcqs": [
+        {
+          "question": "Which region of the large intestine primarily acts as temporary storage for feces?",
+          "options": ["Cecum", "Ascending colon", "Rectum", "Sigmoid colon"],
+          "correct_answer": "Rectum",
+          "marks": 1
+        },
+        {
+          "question": "Which molecule is the universal energy currency of the cell?",
+          "options": ["Glucose", "ATP", "NADH", "Glycogen"],
+          "correct_answer": "ATP",
+          "marks": 1
+        },
+        {
+          "question": "The triangular area at the base of the bladder defined by the two ureteral orifices and the internal urethral orifice is called the:",
+          "options": ["Trigone", "Dome", "Rugae", "Detrusor"],
+          "correct_answer": "Trigone",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "Primary bile salts are synthesized from ________ in the liver.",
+          "correct_answer": "Cholesterol",
+          "marks": 1
+        },
+        {
+          "question": "The conversion of pepsinogen to the active enzyme pepsin requires ________.",
+          "correct_answer": "Hydrochloric acid",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Explain how ADH (antidiuretic hormone) and aldosterone differ in regulating renal water and sodium balance.",
+          "sample_answer": "ADH (from the posterior pituitary) increases water permeability of the collecting ducts by inserting aquaporin channels, promoting water reabsorption and concentrating urine (affects water balance). Aldosterone (from the adrenal cortex) increases Na+ reabsorption and K+ secretion in the distal tubule/collecting duct by upregulating ENaC and Na+/K+ pumps; water follows the reabsorbed sodium, expanding blood volume and affecting blood pressure (affects sodium and indirectly water).",
+          "marks": 5
+        },
+        {
+          "question": "Describe major metabolic and detoxification functions of the liver.",
+          "sample_answer": "The liver produces bile for fat digestion, stores glycogen and releases glucose, synthesizes plasma proteins (albumin, clotting factors), converts ammonia to urea, metabolizes drugs and toxins (phase I/II reactions), stores vitamins and iron, and participates in lipid metabolism (cholesterol synthesis and lipoprotein production). These functions are central to homeostasis and detoxification.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 4,
+      "mcqs": [
+        {
+          "question": "Which duct connects the gallbladder to the common bile duct?",
+          "options": ["Hepatic duct", "Pancreatic duct", "Cystic duct", "Common hepatic duct"],
+          "correct_answer": "Cystic duct",
+          "marks": 1
+        },
+        {
+          "question": "Which of the following is an essential amino acid (must be obtained from the diet)?",
+          "options": ["Alanine", "Lysine", "Glycine", "Aspartate"],
+          "correct_answer": "Lysine",
+          "marks": 1
+        },
+        {
+          "question": "Which pancreatic enzyme is primarily responsible for lipid digestion in the small intestine?",
+          "options": ["Amylase", "Lipase", "Trypsin", "Enterokinase"],
+          "correct_answer": "Lipase",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The blood protein that maintains colloid oncotic pressure is ________.",
+          "correct_answer": "Albumin",
+          "marks": 1
+        },
+        {
+          "question": "The structural protein that forms hair and nails is called ________.",
+          "correct_answer": "Keratin",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Explain the countercurrent multiplier mechanism and the role of the vasa recta in preserving the medullary gradient.",
+          "sample_answer": "The countercurrent multiplier in the loop of Henle creates a progressively increasing osmotic gradient in the medulla: the descending limb is water-permeable (loses water) while the ascending limb actively transports NaCl out (impermeable to water), concentrating the medulla. The vasa recta (capillary loop) runs parallel as a countercurrent exchanger, allowing blood to pick up solutes and lose water without dissipating the gradient, thus preserving the medullary osmotic gradient essential for water reabsorption.",
+          "marks": 5
+        },
+        {
+          "question": "Describe the roles of LDL and HDL in cholesterol transport and their implications for cardiovascular disease.",
+          "sample_answer": "LDL (low-density lipoprotein) transports cholesterol from the liver to peripheral tissues and can deposit cholesterol in arterial walls, promoting atherosclerosis and cardiovascular risk. HDL (high-density lipoprotein) collects excess cholesterol from tissues and arterial plaques and transports it back to the liver for excretion (reverse cholesterol transport), which is protective. High LDL and low HDL levels are associated with increased cardiovascular disease risk.",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    },
+    {
+      "set_number": 5,
+      "mcqs": [
+        {
+          "question": "Which enzyme at the intestinal brush border hydrolyzes lactose to glucose and galactose?",
+          "options": ["Sucrase", "Lactase", "Maltase", "Enterokinase"],
+          "correct_answer": "Lactase",
+          "marks": 1
+        },
+        {
+          "question": "Which organ stores and concentrates bile produced by the liver?",
+          "options": ["Pancreas", "Gallbladder", "Spleen", "Stomach"],
+          "correct_answer": "Gallbladder",
+          "marks": 1
+        },
+        {
+          "question": "Which nucleic acid contains the base uracil?",
+          "options": ["DNA", "mRNA", "tRNA", "Both mRNA and tRNA"],
+          "correct_answer": "Both mRNA and tRNA",
+          "marks": 1
+        }
+      ],
+      "fill_in_the_blanks": [
+        {
+          "question": "The repeating monomeric unit of nucleic acids is called a ________.",
+          "correct_answer": "Nucleotide",
+          "marks": 1
+        },
+        {
+          "question": "The chemical reaction that joins monomers into polymers by removing water is called ________.",
+          "correct_answer": "Dehydration synthesis",
+          "marks": 1
+        }
+      ],
+      "saqs": [
+        {
+          "question": "Trace the path of a swallowed bolus from the mouth to the stomach, naming the major structures and processes involved.",
+          "sample_answer": "Bolus formation begins in the oral cavity (mastication + saliva), then moves to the oropharynx and laryngopharynx. The pharyngeal phase triggers the swallowing reflex, the epiglottis closes over the trachea, and the upper esophageal sphincter opens. Peristalsis propels the bolus down the esophagus; the lower esophageal (cardiac) sphincter relaxes, allowing entry into the stomach where mechanical and chemical digestion continue.",
+          "marks": 5
+        },
+        {
+          "question": "List common causes and key clinical features of acute kidney injury (AKI).",
+          "sample_answer": "Causes: prerenal (hypovolemia, decreased perfusion), intrinsic (acute tubular necrosis from ischemia or nephrotoxins, glomerulonephritis), postrenal (obstruction of urinary tract). Clinical features: rapid rise in serum creatinine and BUN, oliguria or anuria, electrolyte disturbances (hyperkalemia, metabolic acidosis), fluid overload and edema, possible uremic symptoms (nausea, confusion).",
+          "marks": 5
+        }
+      ],
+      "total_marks": 25
+    }
+  ]
+}
+

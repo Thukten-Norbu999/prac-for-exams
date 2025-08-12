@@ -240,7 +240,247 @@
         }
       ],
       "total_marks": 25
-    }
+    },
+    {
+    "set_number": 6,
+    "mcqs": [
+      {
+        "question": "Which vessel carries filtered blood away from the glomerulus?",
+        "options": ["Renal vein", "Afferent arteriole", "Efferent arteriole", "Vasa recta"],
+        "correct_answer": "Efferent arteriole",
+        "marks": 1
+      },
+      {
+        "question": "The main function of the small intestine is:",
+        "options": ["Water absorption", "Protein synthesis", "Nutrient absorption", "Bile production"],
+        "correct_answer": "Nutrient absorption",
+        "marks": 1
+      },
+      {
+        "question": "Which biomolecule is made of glycerol and three fatty acids?",
+        "options": ["Phospholipid", "Triglyceride", "Steroid", "Polysaccharide"],
+        "correct_answer": "Triglyceride",
+        "marks": 1
+      }
+    ],
+    "fill_in_the_blanks": [
+      {
+        "question": "The capillary network surrounding the nephron loop is called the ________.",
+        "correct_answer": "Vasa recta",
+        "marks": 1
+      },
+      {
+        "question": "The process by which the kidney returns water and solutes to the blood is called ________.",
+        "correct_answer": "Tubular reabsorption",
+        "marks": 1
+      }
+    ],
+    "saqs": [
+      {
+        "question": "Briefly describe the role of the glomerulus in urine formation.",
+        "sample_answer": "The glomerulus filters blood under pressure, allowing water and small solutes to pass into Bowman's capsule while retaining blood cells and proteins.",
+        "marks": 5
+      },
+      {
+        "question": "Explain why bile salts are important for fat absorption.",
+        "sample_answer": "Bile salts emulsify fats into small droplets, increasing the surface area for pancreatic lipase to act, improving fat digestion and absorption.",
+        "marks": 5
+      }
+    ],
+    "total_marks": 25
+  },
+  {
+    "set_number": 7,
+    "mcqs": [
+      {
+        "question": "Which hormone increases water reabsorption in the kidneys?",
+        "options": ["Aldosterone", "ADH", "Cortisol", "Erythropoietin"],
+        "correct_answer": "ADH",
+        "marks": 1
+      },
+      {
+        "question": "Which part of the digestive tract has villi?",
+        "options": ["Esophagus", "Small intestine", "Large intestine", "Stomach"],
+        "correct_answer": "Small intestine",
+        "marks": 1
+      },
+      {
+        "question": "Which sugar is a disaccharide?",
+        "options": ["Glucose", "Fructose", "Sucrose", "Galactose"],
+        "correct_answer": "Sucrose",
+        "marks": 1
+      }
+    ],
+    "fill_in_the_blanks": [
+      {
+        "question": "The process of breaking down food into smaller molecules is called ________.",
+        "correct_answer": "Digestion",
+        "marks": 1
+      },
+      {
+        "question": "The nephron structure responsible for filtration is called ________.",
+        "correct_answer": "Bowman's capsule",
+        "marks": 1
+      }
+    ],
+    "saqs": [
+      {
+        "question": "State two main functions of the urinary bladder.",
+        "sample_answer": "The urinary bladder stores urine and contracts to expel it through the urethra during urination.",
+        "marks": 5
+      },
+      {
+        "question": "Briefly explain the difference between monosaccharides and polysaccharides with examples.",
+        "sample_answer": "Monosaccharides are single sugar units (e.g., glucose, fructose), while polysaccharides are long chains of monosaccharides (e.g., starch, glycogen).",
+        "marks": 5
+      }
+    ],
+    "total_marks": 25
+  },
+  {
+    "set_number": 8,
+    "mcqs": [
+      {
+        "question": "Which part of the nephron is mainly responsible for reabsorbing glucose?",
+        "options": ["Loop of Henle", "Distal tubule", "Proximal tubule", "Collecting duct"],
+        "correct_answer": "Proximal tubule",
+        "marks": 1
+      },
+      {
+        "question": "Which structure prevents food from entering the trachea during swallowing?",
+        "options": ["Uvula", "Soft palate", "Epiglottis", "Glottis"],
+        "correct_answer": "Epiglottis",
+        "marks": 1
+      },
+      {
+        "question": "DNA is made up of repeating units called:",
+        "options": ["Amino acids", "Nucleotides", "Fatty acids", "Monosaccharides"],
+        "correct_answer": "Nucleotides",
+        "marks": 1
+      }
+    ],
+    "fill_in_the_blanks": [
+      {
+        "question": "The functional unit of the kidney is the ________.",
+        "correct_answer": "Nephron",
+        "marks": 1
+      },
+      {
+        "question": "The enzyme that digests proteins in the stomach is ________.",
+        "correct_answer": "Pepsin",
+        "marks": 1
+      }
+    ],
+    "saqs": [
+      {
+        "question": "Name the three main processes involved in urine formation.",
+        "sample_answer": "Glomerular filtration, tubular reabsorption, and tubular secretion.",
+        "marks": 5
+      },
+      {
+        "question": "Explain the role of amylase in digestion.",
+        "sample_answer": "Amylase breaks down starch into maltose and other small carbohydrates for easier digestion in the small intestine.",
+        "marks": 5
+      }
+    ],
+    "total_marks": 25
+  },
+  {
+    "set_number": 9,
+    "mcqs": [
+      {
+        "question": "Which kidney structure collects urine before it enters the ureter?",
+        "options": ["Renal pyramid", "Renal pelvis", "Renal capsule", "Calyx"],
+        "correct_answer": "Renal pelvis",
+        "marks": 1
+      },
+      {
+        "question": "The main site of water absorption in the digestive tract is the:",
+        "options": ["Stomach", "Small intestine", "Large intestine", "Rectum"],
+        "correct_answer": "Large intestine",
+        "marks": 1
+      },
+      {
+        "question": "Which lipid type is used mainly for long-term energy storage?",
+        "options": ["Phospholipids", "Steroids", "Triglycerides", "Glycolipids"],
+        "correct_answer": "Triglycerides",
+        "marks": 1
+      }
+    ],
+    "fill_in_the_blanks": [
+      {
+        "question": "The muscular layer of the urinary bladder wall is called the ________ muscle.",
+        "correct_answer": "Detrusor",
+        "marks": 1
+      },
+      {
+        "question": "The enzyme that breaks down fats into glycerol and fatty acids is ________.",
+        "correct_answer": "Lipase",
+        "marks": 1
+      }
+    ],
+    "saqs": [
+      {
+        "question": "Describe the function of the ureters.",
+        "sample_answer": "Ureters are muscular tubes that carry urine from the kidneys to the urinary bladder by peristaltic contractions.",
+        "marks": 5
+      },
+      {
+        "question": "List two differences between saturated and unsaturated fats.",
+        "sample_answer": "Saturated fats have no double bonds between carbon atoms and are solid at room temperature; unsaturated fats have one or more double bonds and are liquid at room temperature.",
+        "marks": 5
+      }
+    ],
+    "total_marks": 25
+  },
+  {
+    "set_number": 10,
+    "mcqs": [
+      {
+        "question": "Which hormone stimulates red blood cell production?",
+        "options": ["Renin", "Erythropoietin", "ADH", "Aldosterone"],
+        "correct_answer": "Erythropoietin",
+        "marks": 1
+      },
+      {
+        "question": "The final section of the small intestine is called the:",
+        "options": ["Jejunum", "Duodenum", "Ileum", "Cecum"],
+        "correct_answer": "Ileum",
+        "marks": 1
+      },
+      {
+        "question": "The building blocks of proteins are:",
+        "options": ["Fatty acids", "Amino acids", "Nucleotides", "Monosaccharides"],
+        "correct_answer": "Amino acids",
+        "marks": 1
+      }
+    ],
+    "fill_in_the_blanks": [
+      {
+        "question": "The functional unit of the liver is called the ________.",
+        "correct_answer": "Lobule",
+        "marks": 1
+      },
+      {
+        "question": "The tube that carries urine from the bladder to the outside is the ________.",
+        "correct_answer": "Urethra",
+        "marks": 1
+      }
+    ],
+    "saqs": [
+      {
+        "question": "Explain the function of the collecting duct in the nephron.",
+        "sample_answer": "The collecting duct reabsorbs water and some salts, concentrating the urine under the influence of ADH before it flows to the renal pelvis.",
+        "marks": 5
+      },
+      {
+        "question": "Describe the role of the stomach in protein digestion.",
+        "sample_answer": "The stomach secretes pepsinogen (activated to pepsin by HCl) to break proteins into peptides, and churns food into chyme for entry into the small intestine.",
+        "marks": 5
+      }
+    ],
+    "total_marks": 25
+  }
   ]
 }
 
